@@ -134,11 +134,9 @@ class Auth
         if (empty($users)) {
             // User not found
             $responseArray["user_auth"] = 0;
-            // } else if ($users[0]["password"] != $data["password"]) {
         } else if (!password_verify($data["password"], $users[0]["password"])) {
             // Wrong password
             $responseArray["user_auth"] = 1;
-            // } else if ($users[0]["password"] == $data["password"]) {
         } else if (password_verify($data["password"], $users[0]["password"])) {
             // User found
             $responseArray["user_auth"] = 2;
