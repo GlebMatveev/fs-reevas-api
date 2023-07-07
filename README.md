@@ -1,5 +1,5 @@
 # fs-reevas-api
 
-> **commercial**
+> **commercial development**
 
 Image stock service (php, mysql, slim 4)
