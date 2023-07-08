@@ -2,4 +2,4 @@
 
 > **commercial development**
 
-Image stock service (php, mysql, slim 4)
+Stock image service (php, mysql, slim 4)
