@@ -4,16 +4,12 @@ use Selective\BasePath\BasePathMiddleware;
 use Slim\App;
 use Slim\Middleware\ErrorMiddleware;
 
-
-
 return function (App $app) {
-
 
     // Parse json, form data and xml
     $app->addBodyParsingMiddleware();
 
     $ini_array = parse_ini_file("settings.ini");
-
 
     $app->add(new Tuupola\Middleware\HttpBasicAuthentication([
         "users" => [
@@ -31,14 +27,10 @@ return function (App $app) {
         }
     ]));
 
-
-
     // Add the Slim built-in routing middleware
     $app->addRoutingMiddleware();
 
     $app->add(BasePathMiddleware::class); // <--- here
-
-
 
     // Catch exceptions and errors
     $app->add(ErrorMiddleware::class);
