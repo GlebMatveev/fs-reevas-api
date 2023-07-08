@@ -78,7 +78,7 @@ class Orders
     public function sendEmail($userId, $userEmail, $quantity, $total, $cart)
     {
         // Mail body
-        $body = '<p><strong>new order from roccas.org</strong></p>';
+        $body = '<p><strong>new order from reevas.org</strong></p>';
 
         $body = $body . "<br>user id: " . $userId;
         $body = $body . "<br>email: " . $userEmail;
@@ -96,8 +96,8 @@ class Orders
         $statement = 0;
 
 
-        $subject = "new request from roccas.org";
-        $from = "noreply@roccas.org";
+        $subject = "new request from reevas.org";
+        $from = "noreply@reevas.org";
 
         $rn = "\r\n";
         $header = 'Content-type: text/html; charset=UTF-8' . $rn;

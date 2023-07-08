@@ -20,7 +20,7 @@ class Requests
         $data = $request->getParsedBody();
 
         // Mail body
-        $body = '<p><strong>new request from roccas.org</strong></p>';
+        $body = '<p><strong>new request from reevas.org</strong></p>';
 
         $body = $body . "<br>email: " . $data["email"];
         $body = $body . "<br>subject: " . $data["subject"];
@@ -37,8 +37,8 @@ class Requests
         $statement = 0;
 
 
-        $subject = "new request from roccas.org";
-        $from = "noreply@roccas.org";
+        $subject = "new request from reevas.org";
+        $from = "noreply@reevas.org";
 
         $rn = "\r\n";
         $header = 'Content-type: text/html; charset=UTF-8' . $rn;
